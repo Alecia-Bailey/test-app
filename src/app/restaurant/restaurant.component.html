@@ -1,5 +1,10 @@
 <style>
 
+  <!-- Search box -->
+  .active-cyan input[type=search] {
+  border-bottom: 1px solid #4dd0e1;
+  box-shadow: 0 1px 0 0 #4dd0e1;
+  }
 
   h1,
   h2,
@@ -7,11 +12,13 @@
   h4,
   h5,
   h6 {
-    margin: 8px 0;
+    margin: 15px 0;
+    align-items: center;
   }
 
   p {
-    margin: 0;
+    margin: 5;
+    align-items: center;
   }
 
   .spacer {
@@ -37,7 +44,7 @@
   }
 
   .toolbar #youtube-logo {
-    height: 40px;
+    height: 60px;
     margin-left: 16px;
   }
 
@@ -127,87 +134,93 @@
   /* Responsive Styles */
 @media screen and (max-width: 767px) {
 
-.card-container > *:not(.circle-link) ,
-.terminal {
-  width: 100%;
-}
+  .card-container > *:not(.circle-link) {
+    width: 100%;
+  }
 
-.card:not(.highlight-card) {
-  height: 16px;
-  margin: 8px 0;
-}
+  .card:not(.highlight-card) {
+    height: 16px;
+    margin: 8px 0;
+  }
 
-.card.highlight-card span {
-  margin-left: 72px;
-}
+  .card.highlight-card span {
+    margin-left: 72px;
+  }
 
-</style>
+  </style>
 
-<!-- Toolbar -->
-<div class="toolbar" role="banner">
-  <span> Restaurant Directory</span>
-    <div class="spacer"></div>
-    <a aria-label="Jamaican Restaurants on twitter" target="_blank" rel="noopener" href="https://twitter.com/restaurantja?lang=en" title="Twitter">
-      <svg id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
-        <rect width="400" height="400" fill="none"/>
-        <path d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23" fill="#fff"/>
-      </svg>
-    </a>
-    <a aria-label="Angular on YouTube" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=lNawCLeDTTg" title="YouTube">
-      <svg id="youtube-logo" height="24" width="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
-        <path d="M0 0h24v24H0V0z" fill="none"/>
-        <path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"/>
-      </svg>
-    </a>
-</div>
+  <!-- Toolbar -->
+  <div class="toolbar" role="banner">
+    <span> Restaurant Directory</span>
+      <div class="spacer"></div>
+      <a aria-label="Jamaican Restaurants on twitter" target="_blank" rel="noopener" href="https://twitter.com/restaurantja?lang=en" title="Twitter">
+        <svg id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+          <rect width="400" height="400" fill="none"/>
+          <path d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23" fill="#fff"/>
+        </svg>
+      </a>
+      <a aria-label="Angular on YouTube" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=lNawCLeDTTg" title="YouTube">
+        <svg id="youtube-logo" height="24" width="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
+          <path d="M0 0h24v24H0V0z" fill="none"/>
+          <path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"/>
+        </svg>
+      </a>
+  </div>
 
-<h2> Restaurants </h2>
+  <h2> Restaurants </h2>
+  <p> Popular resturants</p>
 
-<input type="hidden" #selection>
+  <input type="hidden" #selection>
 
-<div class="card-container">
-  <div class="card card-small" (click)="selection.value = 'component'" tabindex="0">
+  <div class="card-container">
+    <div class="card card-small" (click)="selection.value = 'component'" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+
+      <span>Chilitos</span>
+    </div>
+
+    <div class="card card-small" (click)="selection.value = 'material'" tabindex="0" href="https://www.chilitosjamexican.com/">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+
+      <span>South Ave Grill</span>
+    </div>
+
+    <div class="card card-small" (click)="selection.value = 'pwa'" tabindex="0" href="https://www.tripadvisor.com/Restaurant_Review-g147310-d806164-Reviews-South_Avenue_Grill-Kingston_Kingston_Parish_Jamaica.html">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+
+      <span>100</span>
+    </div>
+
+    <div class="card card-small" (click)="selection.value = 'dependency'" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
 
-    <span>Chilitos</span>
-  </div>
+      <span>Fromage</span>
+    </div>
 
-  <div class="card card-small" (click)="selection.value = 'material'" tabindex="0">
+    <div class="card card-small" (click)="selection.value = 'test'" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
 
-    <span>South Ave Grill</span>
-  </div>
+      <span>Cru Bar</span>
+    </div>
 
-  <div class="card card-small" (click)="selection.value = 'pwa'" tabindex="0">
+    <div class="card card-small" (click)="selection.value = 'build'" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
 
-    <span>100</span>
+      <span>OPA</span>
+    </div>
+
+    <div class="card card-small" (click)="selection.value = 'build'" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+
+      <span>A Bar</span>
+    </div>
+
   </div>
 
-  <div class="card card-small" (click)="selection.value = 'dependency'" tabindex="0">
-    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
 
-    <span>Fromage</span>
-  </div>
-
-  <div class="card card-small" (click)="selection.value = 'test'" tabindex="0">
-    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-
-    <span>Cru Bar</span>
-  </div>
-
-  <div class="card card-small" (click)="selection.value = 'build'" tabindex="0">
-    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-
-    <span>OPA</span>
-  </div>
-
-  <div class="card card-small" (click)="selection.value = 'build'" tabindex="0">
-    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-
-    <span>A Bar</span>
-  </div>
-
-</div>
-
-
+  <!-- Search box -->
+  <form>
+    <div class="md-form active-cyan active-cyan-2 mb-3">
+      <input class="form-control" type="search" id="search3" aria-label="Search" mdbInput placeholder="Search">
+    </div>
+  </form>
