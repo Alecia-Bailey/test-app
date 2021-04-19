@@ -2,8 +2,23 @@
 
   <!-- Search box -->
   .active-cyan input[type=search] {
-  border-bottom: 1px solid #4dd0e1;
-  box-shadow: 0 1px 0 0 #4dd0e1;
+    border-bottom: 1px solid #4dd0e1;
+    box-shadow: 0 1px 0 0 #4dd0e1;
+    top: 355px;
+    left: 575px;
+  }
+
+  .active-cyan input[type=search] input{
+    height: 30px;
+    width: 50px;
+  }
+
+  button{
+    /*Change the width as much as you like, but make sure
+    margin-left and margin-right + width = 100%*/
+    width: 50%;
+    margin-left:25%;
+    margin-right:25%;
   }
 
   h1,
@@ -14,6 +29,9 @@
   h6 {
     margin: 15px 0;
     align-items: center;
+    margin-left:45%;
+    margin-right:100%;
+    width: 50%;;
   }
 
   p {
@@ -50,7 +68,7 @@
 
   .toolbar #twitter-logo:hover,
   .toolbar #youtube-logo:hover {
-    opacity: 0.8;
+    opacity: 0.5;
   }
 
   .content {
@@ -132,22 +150,10 @@
   }
 
   /* Responsive Styles */
-@media screen and (max-width: 767px) {
+  @media screen and (max-width: 600px) {
 
-  .card-container > *:not(.circle-link) {
-    width: 100%;
   }
-
-  .card:not(.highlight-card) {
-    height: 16px;
-    margin: 8px 0;
-  }
-
-  .card.highlight-card span {
-    margin-left: 72px;
-  }
-
-  </style>
+</style>
 
   <!-- Toolbar -->
   <div class="toolbar" role="banner">
@@ -168,7 +174,8 @@
   </div>
 
   <h2> Restaurants </h2>
-  <p> Popular resturants</p>
+  <br><br>
+  <h3> Quick view </h3>
 
   <input type="hidden" #selection>
 
@@ -217,10 +224,19 @@
 
   </div>
 
+  <!-- Adds space between things -->
+  <br> <br>
 
   <!-- Search box -->
   <form>
-    <div class="md-form active-cyan active-cyan-2 mb-3">
-      <input class="form-control" type="search" id="search3" aria-label="Search" mdbInput placeholder="Search">
+    <div class="md-form active-cyan active-cyan-2 mb-3" align="center" >
+      <input class="form-control" type="search" id="search3" aria-label="Search" mdbInput placeholder="Search..">
     </div>
   </form>
+
+  <br> <br>
+  <button (click)="getName()">Get alert</button>
+
+
+
+

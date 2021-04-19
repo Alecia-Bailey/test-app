@@ -11,7 +11,9 @@ import { RESTAURANTS } from '../restaurant-list';
 export class RestaurantsComponent implements OnInit{
   restaurants = RESTAURANTS;
   selectedRestaurant?: Restaurant;
-
+  getName(){
+    alert("Button clicked")
+  }
   constructor(){}
 
   ngOnInit(){}
