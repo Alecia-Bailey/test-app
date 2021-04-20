@@ -1,24 +1,20 @@
 <style>
 
-  <!-- Search box -->
-  .active-cyan input[type=search] {
-    border-bottom: 1px solid #4dd0e1;
-    box-shadow: 0 1px 0 0 #4dd0e1;
-    top: 355px;
-    left: 575px;
-  }
-
-  .active-cyan input[type=search] input{
-    height: 30px;
-    width: 50px;
-  }
-
   button{
     /*Change the width as much as you like, but make sure
     margin-left and margin-right + width = 100%*/
-    width: 50%;
-    margin-left:25%;
-    margin-right:25%;
+    width: 10%;
+    margin-left:45%;
+    margin-right:45%;
+  }
+
+  section{
+    display: flex;
+    justify-content: center;
+  }
+
+  form{
+
   }
 
   h1,
@@ -28,10 +24,10 @@
   h5,
   h6 {
     margin: 15px 0;
-    align-items: center;
     margin-left:45%;
     margin-right:100%;
-    width: 50%;;
+    width: 50%;
+    display: flex;
   }
 
   p {
@@ -69,15 +65,6 @@
   .toolbar #twitter-logo:hover,
   .toolbar #youtube-logo:hover {
     opacity: 0.5;
-  }
-
-  .content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
-    flex-direction: column;
-    align-items: center;
   }
 
   svg.material-icons {
@@ -134,10 +121,6 @@
     box-shadow: 0 4px 17px rgba(41, 6, 240, 0.35);
   }
 
-  .card-container .card:not(.highlight-card):hover .material-icons path {
-    fill: rgb(105, 103, 103);
-  }
-
   a,
   a:visited,
   a:hover {
@@ -173,9 +156,9 @@
       </a>
   </div>
 
-  <h2> Restaurants </h2>
+  <h1> Restaurants </h1>
   <br><br>
-  <h3> Quick view </h3>
+  <h2> Quick view </h2>
 
   <input type="hidden" #selection>
 
@@ -225,17 +208,68 @@
   </div>
 
   <!-- Adds space between things -->
-  <br> <br>
-
-  <!-- Search box -->
-  <form>
-    <div class="md-form active-cyan active-cyan-2 mb-3" align="center" >
-      <input class="form-control" type="search" id="search3" aria-label="Search" mdbInput placeholder="Search..">
-    </div>
-  </form>
 
   <br> <br>
-  <button (click)="getName()">Get alert</button>
+
+  <section layout="row" layout-align="center center">
+    <button class="groupX left">Sign Up</button>
+    <button class="groupX middle">Order</button>
+    <button class="groupX middle">View All</button>
+    <button class="groupX right">Add New</button>
+    <!-- <button class="groupX right">B&amp;O</button> -->
+  </section>
+
+  <br> <br>
+
+  <div>
+    <h1> Sign up today</h1>
+    <form>
+      <!-- 2 column grid layout with text inputs for the first and last names -->
+      <div class="form-group">
+        <div class="col" align="center">
+          <div class="form-outline">
+            <input type="text" class="form-control" placeholder="First name"/>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="form-outline" align="center">
+            <input type="text" class="form-control" placeholder="Last name" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Email input -->
+      <div class="form-outline mb-4" align="center">
+        <input type="email" class="form-control" placeholder="Email address" />
+      </div>
+
+      <!-- Password input -->
+      <div class="form-outline mb-4" align="center">
+        <input type="password" class="form-control" placeholder="Password"/>
+        <!-- <label class="form-label" for="form3Example4">Password</label> -->
+      </div>
+
+      <br> <br>
+
+      <!-- Checkbox -->
+      <div class="form-check d-flex justify-content-center mb-4" align="center">
+        <input
+          class="form-check-input me-2"
+          type="checkbox"
+          value=""
+          id="form2Example3"
+          checked
+        />
+        <label class="form-check-label" for="form2Example3">Subscribe to our newsletter</label>
+      </div>
+
+      <br><br>
+      <!-- Sign up button -->
+      <button type="submit" class="btn btn-primary btn-block mb-4" (click)="signup()">Sign up</button>
+    </form>
+  </div>
+<br> <br>
 
 
 

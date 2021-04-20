@@ -2,6 +2,7 @@ import { Restaurant } from './../restaurants';
 import { Component, OnInit } from '@angular/core';
 import { RESTAURANTS } from '../restaurant-list';
 
+
 @Component({
   selector: 'app-restaurant',
   templateUrl: './restaurant.component.html',
@@ -14,6 +15,12 @@ export class RestaurantsComponent implements OnInit{
   getName(){
     alert("Button clicked")
   }
+
+  signup(){
+    alert("Sign up button clicked")
+  }
+
+
   constructor(){}
 
   ngOnInit(){}
