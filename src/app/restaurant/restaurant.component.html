@@ -4,18 +4,12 @@
     /*Change the width as much as you like, but make sure
     margin-left and margin-right + width = 100%*/
     width: 10%;
-    margin-left:45%;
-    margin-right:45%;
+    display: inline-flex;
+    padding: 0 6px 0 6px;
+    margin: 6px 8px 6px 8px;
+    min-width: 88px;
   }
 
-  section{
-    display: flex;
-    justify-content: center;
-  }
-
-  form{
-
-  }
 
   h1,
   h2,
@@ -30,7 +24,7 @@
     display: flex;
   }
 
-  p {
+  .p {
     margin: 5;
     align-items: center;
   }
@@ -38,6 +32,32 @@
   .spacer {
     flex: 1;
   }
+
+  span.nav-link{
+    padding-left: 50px;
+  }
+
+  .nav-link {
+    /* text-align: center; */
+    /* margin-left: 10%; */
+    display: flex;
+    padding: 10px 5px;
+    margin-left: 50px;
+    color: white;
+    font-weight: normal;
+    justify-content:space-around;
+    align-items:center;
+
+
+  }
+
+
+  form {
+    height: 40px;
+    margin-left: 200px;
+  }
+
+
 
   .toolbar {
     position: absolute;
@@ -50,6 +70,7 @@
     background-color: #1976d2;
     color: white;
     font-weight: 600;
+
   }
 
   .toolbar #twitter-logo {
@@ -121,19 +142,37 @@
     box-shadow: 0 4px 17px rgba(41, 6, 240, 0.35);
   }
 
-  a,
+  a
   a:visited,
   a:hover {
     color: #1976d2;
     text-decoration: none;
+    padding: 10px 5px;
+    /* font-size: .80em; */
+
   }
 
   a:hover {
-    color: #125699;
+    color: white;
   }
 
   /* Responsive Styles */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px x 907px) {
+
+    button{
+      /*Change the width as much as you like, but make sure
+      margin-left and margin-right + width = 100%*/
+      width: 10%;
+      display: inline-flex;
+      padding: 0 6px 0 6px;
+      margin: 6px 8px 6px 8px;
+      min-width: 88px;
+    }
+
+    form{
+      height: 40px;
+      margin-left: 200px;
+    }
 
   }
 </style>
@@ -141,6 +180,16 @@
   <!-- Toolbar -->
   <div class="toolbar" role="banner">
     <span> Restaurant Directory</span>
+
+    <a class="nav-link" href="#" [routerLink]="['/signup']" routerLinkActive="router-link-active" font-color="white">Sign Up <span class="sr-only"></span></a>
+    <a class="nav-link" href="#">Place Order</a>
+    <a class="nav-link" href="#">View All</a>
+
+    <form class="form-inline mt-2 mt-md-0">
+      <input class="form-control mr-sm-2" type="Search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+
       <div class="spacer"></div>
       <a aria-label="Jamaican Restaurants on twitter" target="_blank" rel="noopener" href="https://twitter.com/restaurantja?lang=en" title="Twitter">
         <svg id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
@@ -211,66 +260,11 @@
 
   <br> <br>
 
-  <section layout="row" layout-align="center center">
-    <button class="groupX left">Sign Up</button>
-    <button class="groupX middle">Order</button>
-    <button class="groupX middle">View All</button>
-    <button class="groupX right">Add New</button>
-    <!-- <button class="groupX right">B&amp;O</button> -->
-  </section>
 
   <br> <br>
 
-  <div>
-    <h1> Sign up today</h1>
-    <form>
-      <!-- 2 column grid layout with text inputs for the first and last names -->
-      <div class="form-group">
-        <div class="col" align="center">
-          <div class="form-outline">
-            <input type="text" class="form-control" placeholder="First name"/>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="form-outline" align="center">
-            <input type="text" class="form-control" placeholder="Last name" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Email input -->
-      <div class="form-outline mb-4" align="center">
-        <input type="email" class="form-control" placeholder="Email address" />
-      </div>
-
-      <!-- Password input -->
-      <div class="form-outline mb-4" align="center">
-        <input type="password" class="form-control" placeholder="Password"/>
-        <!-- <label class="form-label" for="form3Example4">Password</label> -->
-      </div>
-
-      <br> <br>
-
-      <!-- Checkbox -->
-      <div class="form-check d-flex justify-content-center mb-4" align="center">
-        <input
-          class="form-check-input me-2"
-          type="checkbox"
-          value=""
-          id="form2Example3"
-          checked
-        />
-        <label class="form-check-label" for="form2Example3">Subscribe to our newsletter</label>
-      </div>
-
-      <br><br>
-      <!-- Sign up button -->
-      <button type="submit" class="btn btn-primary btn-block mb-4" (click)="signup()">Sign up</button>
-    </form>
-  </div>
+  <router-outlet> </router-outlet>
 <br> <br>
-
 
 
 

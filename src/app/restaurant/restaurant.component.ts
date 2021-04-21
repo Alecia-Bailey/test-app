@@ -1,3 +1,4 @@
+
 import { Restaurant } from './../restaurants';
 import { Component, OnInit } from '@angular/core';
 import { RESTAURANTS } from '../restaurant-list';
@@ -9,7 +10,9 @@ import { RESTAURANTS } from '../restaurant-list';
   styleUrls: ['./restaurant.component.css']
 })
 
-export class RestaurantsComponent implements OnInit{
+// implements OnInit
+
+export class RestaurantsComponent {
   restaurants = RESTAURANTS;
   selectedRestaurant?: Restaurant;
   getName(){
@@ -23,7 +26,8 @@ export class RestaurantsComponent implements OnInit{
 
   constructor(){}
 
-  ngOnInit(){}
+
+  // ngOnInit(){}
 
   onSelect(restaurant: Restaurant):void{
     this.selectedRestaurant = restaurant;
