@@ -6,7 +6,7 @@ import { RESTAURANTS } from '../restaurant-list';
 
 @Component({
   selector: 'app-restaurant',
-  templateUrl: './restaurant.component.html',
+  templateUrl: 'restaurant.component.html',
   styleUrls: ['./restaurant.component.css']
 })
 
@@ -23,9 +23,7 @@ export class RestaurantsComponent {
     alert("Sign up button clicked")
   }
 
-
   constructor(){}
-
 
   // ngOnInit(){}
 
@@ -33,5 +31,4 @@ export class RestaurantsComponent {
     this.selectedRestaurant = restaurant;
   }
 }
-
 

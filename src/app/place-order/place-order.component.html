@@ -1,0 +1,188 @@
+<!-- <br><br>
+
+
+<section class="order-form my-4 mx-4">
+  <div class="container pt-4">
+
+    <div class="row">
+      <div class="col-12">
+        <h1>Order Form</h1>
+        <hr class="mt-1">
+      </div>
+      <div class="col-12">
+
+        <div class="row mx-4">
+          <div class="col-12 mb-2">
+            <label class="order-form-label">Name</label>
+          </div>
+          <div class="col-12 col-sm-6">
+            <input class="order-form-input" placeholder="First">
+          </div>
+          <div class="col-12 col-sm-6 mt-2 mt-sm-0">
+            <input class="order-form-input" placeholder="Last">
+          </div>
+        </div>
+
+        <div class="row mt-3 mx-4">
+          <div class="col-12">
+            <label class="order-form-label">Type of thing you want to order</label>
+          </div>
+          <div class="col-12">
+            <input class="order-form-input" placeholder=" ">
+          </div>
+        </div>
+
+        <div class="row mt-3 mx-4">
+          <div class="col-12">
+            <label class="order-form-label">Another type of thing you want to order</label>
+          </div>
+          <div class="col-12">
+            <input class="order-form-input" placeholder=" ">
+          </div>
+        </div>
+
+        <div class="row mt-3 mx-4">
+          <div class="col-12">
+            <label class="order-form-label" for="date-picker-example">Date</label>
+          </div>
+          <div class="col-12">
+            <input class="order-form-input datepicker" placeholder="Selected date" type="text"
+              id="date-picker-example">
+          </div>
+        </div>
+
+        <div class="row mt-3 mx-4">
+          <div class="col-12">
+            <label class="order-form-label">Adress</label>
+          </div>
+          <div class="col-12">
+            <input class="order-form-input" placeholder="Street Address">
+          </div>
+          <div class="col-12 mt-2">
+            <input class="order-form-input" placeholder="Street Address Line 2">
+          </div>
+          <div class="col-12 col-sm-6 mt-2 pr-sm-2">
+            <input class="order-form-input" placeholder="City">
+          </div>
+          <div class="col-12 col-sm-6 mt-2 pl-sm-0">
+            <input class="order-form-input" placeholder="Region">
+          </div>
+          <div class="col-12 col-sm-6 mt-2 pr-sm-2">
+            <input class="order-form-input" placeholder="Postal / Zip Code">
+          </div>
+          <div class="col-12 col-sm-6 mt-2 pl-sm-0">
+            <input class="order-form-input" placeholder="Country">
+          </div>
+        </div>
+
+        <div class="row mt-3 mx-4">
+          <div class="col-12">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="validation" id="validation" value="1">
+              <label for="validation" class="form-check-label">I know what I need to know</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-12">
+            <button type="button" id="btnSubmit" class="btn btn-dark d-block mx-auto btn-submit">Submit</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<br><br><br>
+
+<div class="container">
+  <div class="title">
+
+  </div>
+<div class="d-flex">
+  <form action="" method="">
+    <label>
+      <span class="fname">First Name <span class="required">*</span></span>
+      <input type="text" name="fname">
+    </label>
+    <label>
+      <span class="lname">Last Name <span class="required">*</span></span>
+      <input type="text" name="lname">
+    </label>
+    <label>
+      <span>Company Name</span>
+      <input type="text" name="cn">
+    </label>
+    <label>
+      <span>Parish <span class="required">*</span></span>
+      <select name="selection">
+        <option>Select a parish...</option>
+        <option>Hanover</option>
+        <option>St. Elizabeth</option>
+        <option>St. James</option>
+        <option>Trelawny</option>
+        <option>Westmoreland</option>
+        <option>Clarendon</option>
+        <option>Manchester</option>
+        <option>St. Ann</option>
+        <option>St. Catherine</option>
+        <option>St. Mary</option>
+        <option>Kingston</option>
+        <option>Portland</option>
+        <option>St. Andrew</option>
+        <option>St. Thomas</option>
+      </select>
+    </label>
+    <label>
+      <span>Street Address <span class="required">*</span></span>
+      <input type="text" name="houseadd" placeholder="House number and street name" required>
+    </label>
+    <label>
+      <span>&nbsp;</span>
+      <input type="text" name="apartment" placeholder="Apartment, suite, unit etc. (optional)">
+    </label>
+
+    <label>
+      <span>Phone <span class="required">*</span></span>
+      <input type="tel" name="city">
+    </label>
+    <label>
+      <span>Email Address <span class="required">*</span></span>
+      <input type="email" name="city">
+    </label>
+  </form>
+  <div class="Yorder">
+    <table>
+      <tr>
+        <th colspan="2">Your order</th>
+      </tr>
+      <tr>
+        <td>Product Name x 2(Qty)</td>
+        <td>$88.00</td>
+      </tr>
+      <tr>
+        <td>Subtotal</td>
+        <td>$88.00</td>
+      </tr>
+      <tr>
+        <td>Shipping</td>
+        <td>Free shipping</td>
+      </tr>
+    </table><br>
+    <div>
+      <input type="radio" name="dbt" value="dbt" checked> Direct Bank Transfer
+    </div>
+    <div>
+      <input type="radio" name="dbt" value="cd"> Cash on Delivery
+    </div>
+    <div>
+      <input type="radio" name="dbt" value="cd"> Paypal <span>
+      <img src="https://www.logolynx.com/images/logolynx/c3/c36093ca9fb6c250f74d319550acac4d.jpeg" alt="" width="50">
+      </span>
+    </div>
+    <button type="button">Place Order</button>
+  </div><!-- Yorder -->
+ </div>
+</div>

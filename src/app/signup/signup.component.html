@@ -1,88 +1,21 @@
-<p>signup works!</p>
+<br><br>
+<br><br>
 
 
-<style>
 
-  button{
-    /*Change the width as much as you like, but make sure
-    margin-left and margin-right + width = 100%*/
-    width: 10%;
-    margin-left:45%;
-    margin-right:45%;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 15px 0;
-    margin-left:45%;
-    margin-right:100%;
-    width: 50%;
-    display: flex;
-  }
-
-  p {
-    margin: 5;
-    align-items: center;
-  }
-
-</style>
-
-
-<div>
-  <h1> Sign up today</h1>
+<section>
   <form>
-    <!-- 2 column grid layout with text inputs for the first and last names -->
-    <div class="form-group">
-      <div class="col" align="center">
-        <div class="form-outline">
-          <input type="text" class="form-control" placeholder="First name"/>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="form-outline" align="center">
-          <input type="text" class="form-control" placeholder="Last name" />
-        </div>
-      </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputFirstName">First Name</label>
+      <input type="f-name" class="form-control" id="inputFirstName" placeholder="First Name">
     </div>
-
-    <!-- Email input -->
-    <div class="form-outline mb-4" align="center">
-      <input type="email" class="form-control" placeholder="Email address" />
+    <div class="form-group col-md-6">
+      <label for="inputLastName">Last Name</label>
+      <input type="l-name" class="form-control" id="inputLastName" placeholder="Last Name">
     </div>
+   </div>
 
-    <!-- Password input -->
-    <div class="form-outline mb-4" align="center">
-      <input type="password" class="form-control" placeholder="Password"/>
-      <!-- <label class="form-label" for="form3Example4">Password</label> -->
-    </div>
-
-    <br> <br>
-
-    <!-- Checkbox -->
-    <div class="form-check d-flex justify-content-center mb-4" align="center">
-      <input
-        class="form-check-input me-2"
-        type="checkbox"
-        value=""
-        id="form2Example3"
-        checked
-      />
-      <label class="form-check-label" for="form2Example3">Subscribe to our newsletter</label>
-    </div>
-
-    <br><br>
-    <!-- Sign up button -->
-    <button type="submit" class="btn btn-primary btn-block mb-4" (click)="signup()">Sign up</button>
-  </form>
-</div>
-
-
-<form>
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Email</label>
@@ -107,24 +40,39 @@
       <input type="text" class="form-control" id="inputCity">
     </div>
     <div class="form-group col-md-4">
-      <label for="inputState">State</label>
-      <select id="inputState" class="form-control">
+      <label for="inputPariash">Parish</label>
+      <select id="inputParish" class="form-control">
         <option selected>Choose...</option>
-        <option>...</option>
+        <option>Hanover</option>
+        <option>St. Elizabeth</option>
+        <option>St. James</option>
+        <option>Trelawny</option>
+        <option>Westmoreland</option>
+        <option>Clarendon</option>
+        <option>Manchester</option>
+        <option>St. Ann</option>
+        <option>St. Catherine</option>
+        <option>St. Mary</option>
+        <option>Kingston</option>
+        <option>Portland</option>
+        <option>St. Andrew</option>
+        <option>St. Thomas</option>
       </select>
     </div>
     <div class="form-group col-md-2">
-      <label for="inputZip">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
+      <label for="inputContact">Telephone</label>
+      <input type="text" class="form-control" id="inputContact">
     </div>
   </div>
   <div class="form-group">
     <div class="form-check">
       <input class="form-check-input" type="checkbox" id="gridCheck">
       <label class="form-check-label" for="gridCheck">
-        Check me out
+        Receive our monthly newsletter
       </label>
     </div>
   </div>
-  <button type="submit" class="btn btn-primary">Sign in</button>
-</form>
+  <button (click)="signup()" type="submit" class="btn btn-primary">Sign up</button>
+  </form>
+</section>
+

@@ -1,10 +1,15 @@
+import { RestaurantsComponent } from './restaurant/restaurant.component';
+import { ViewAllComponent } from './view-all/view-all.component';
+import { PlaceOrderComponent } from './place-order/place-order.component';
 import { SignupComponent } from './signup/signup.component';
-
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'signup', component: SignupComponent}
+  { path:'home', component:RestaurantsComponent},
+  { path: 'signup', component: SignupComponent},
+  { path: 'place_order', component: PlaceOrderComponent},
+  { path: 'view_all', component: ViewAllComponent}
 ];
 
 @NgModule({
@@ -14,4 +19,4 @@ const routes: Routes = [
 export class AppRoutingModule { }
 
 //Just exports the array instead of the individual arrays
-export const routingComponents = [SignupComponent]
+export const routingComponents = [RestaurantsComponent,SignupComponent,PlaceOrderComponent,ViewAllComponent]

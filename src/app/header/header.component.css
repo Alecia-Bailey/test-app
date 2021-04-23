@@ -1,0 +1,20 @@
+nav a.active {
+  color: white;
+}
+
+.navbar{
+  background:  #1976d2 !important;
+  margin: 0;
+  position: absolute;
+  top:0%;
+  width: 100%;
+
+}
+
+.navbar-brand{
+  color:white !important;
+}
+
+.nav-link{
+  color: whitesmoke !important;
+}
