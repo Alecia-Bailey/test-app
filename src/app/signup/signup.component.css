@@ -1,5 +1,12 @@
 form{
-  display: flexbox;
+  /* display: flexbox; */
+  align-content:center;
+  width:max-content;
+}
+
+section{
+  display: flex;
+  justify-content: center;
 }
 
 input {

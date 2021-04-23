@@ -31,58 +31,22 @@
 
 </style>
 
-
-<div>
-  <h1> Sign up today</h1>
+<section>
   <form>
-    <!-- 2 column grid layout with text inputs for the first and last names -->
-    <div class="form-group">
-      <div class="col" align="center">
-        <div class="form-outline">
-          <input type="text" class="form-control" placeholder="First name"/>
-        </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputFirstName">First Name</label>
+      <input type="f-name" class="form-control" id="inputFirstName" placeholder="First Name">
+    </div>
+   </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputLastName">Last Name</label>
+        <input type="l-name" class="form-control" id="inputLastName" placeholder="Last Name">
       </div>
-
-      <div class="col">
-        <div class="form-outline" align="center">
-          <input type="text" class="form-control" placeholder="Last name" />
-        </div>
-      </div>
     </div>
 
-    <!-- Email input -->
-    <div class="form-outline mb-4" align="center">
-      <input type="email" class="form-control" placeholder="Email address" />
-    </div>
-
-    <!-- Password input -->
-    <div class="form-outline mb-4" align="center">
-      <input type="password" class="form-control" placeholder="Password"/>
-      <!-- <label class="form-label" for="form3Example4">Password</label> -->
-    </div>
-
-    <br> <br>
-
-    <!-- Checkbox -->
-    <div class="form-check d-flex justify-content-center mb-4" align="center">
-      <input
-        class="form-check-input me-2"
-        type="checkbox"
-        value=""
-        id="form2Example3"
-        checked
-      />
-      <label class="form-check-label" for="form2Example3">Subscribe to our newsletter</label>
-    </div>
-
-    <br><br>
-    <!-- Sign up button -->
-    <button type="submit" class="btn btn-primary btn-block mb-4" (click)="signup()">Sign up</button>
-  </form>
-</div>
-
-
-<form>
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Email</label>
@@ -126,5 +90,6 @@
       </label>
     </div>
   </div>
-  <button type="submit" class="btn btn-primary">Sign in</button>
-</form>
+  <button (click)="signup()" type="submit" class="btn btn-primary">Sign up</button>
+  </form>
+</section>
