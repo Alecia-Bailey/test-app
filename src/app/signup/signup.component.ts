@@ -13,7 +13,7 @@ export class SignupComponent implements OnInit {
   }
 
   signup(){
-    alert("Sign up button clicked")
+    alert('Sign up button clicked');
   }
 
 }
