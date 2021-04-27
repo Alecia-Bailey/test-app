@@ -1,8 +1,4 @@
-
-import { Restaurant } from './../restaurants';
-import { Component, OnInit } from '@angular/core';
-import { RESTAURANTS } from '../restaurant-list';
-
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-restaurant',
@@ -10,25 +6,7 @@ import { RESTAURANTS } from '../restaurant-list';
   styleUrls: ['./restaurant.component.css']
 })
 
-// implements OnInit
-
 export class RestaurantsComponent {
-  restaurants = RESTAURANTS;
-  selectedRestaurant?: Restaurant;
-  getName(){
-    alert("Button clicked")
-  }
-
-  signup(){
-    alert("Sign up button clicked")
-  }
-
   constructor(){}
-
-  // ngOnInit(){}
-
-  onSelect(restaurant: Restaurant):void{
-    this.selectedRestaurant = restaurant;
-  }
 }
 

@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlaceOrderComponent implements OnInit {
 
+  placeorder(){
+    alert('Place Order button pressed');
+  }
+
   constructor() { }
 
   ngOnInit(): void {
