@@ -1,0 +1,52 @@
+form{
+  align-content:center;
+  width:max-content;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  padding: .5rem;
+}
+
+button{
+    width: 30%;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    background: #1976d2;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    align-content: center;
+    margin: 0 auto;
+    display: block;
+}
+
+button:hover{
+  cursor: pointer;
+  background: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 15px 0;
+  margin-left:45%;
+  margin-right:100%;
+  width: 50%;
+  display: flex;
+}
+
+p {
+  margin: 5;
+  align-items: center;
+}
+
+

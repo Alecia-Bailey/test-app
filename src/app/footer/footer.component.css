@@ -1,0 +1,42 @@
+
+.navbar{
+  background:  #1976d2 !important;
+  margin: 0;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.fa {
+  width: 40px;
+  padding: 8px;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: white;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+}
+
+.fa-youtube {
+  background: #bb0000;
+}
+
+
