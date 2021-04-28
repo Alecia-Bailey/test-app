@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
 
+Bootstrap version 4 was used for the styling.
+
+A prototype for the project was generated with [Balsamiq](https://balsamiq.cloud/sytvesw/pdfx1gp).
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
